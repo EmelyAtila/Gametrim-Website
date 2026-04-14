@@ -179,7 +179,7 @@ body {
   left: 0;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(83, 57, 248, 0.158), transparent 70%);
+  background: radial-gradient(circle, rgba(83, 57, 248, 0.19), transparent 70%);
   pointer-events: none;
   z-index: 0;
 }
@@ -258,15 +258,15 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 100px 40px; 
-  padding: 60px 80px;
+  padding: 60px 120px;
   border-radius: 0;
   overflow: visible; 
   min-height: 450px;
 }
 
 .rank-content {
-  flex: 1;
-  max-width: 50%;
+  flex: 0 0 auto;
+  max-width: 45%;
   z-index: 2;
 }
 
@@ -310,7 +310,6 @@ body {
   background: transparent;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: 'Orbitron', sans-serif;
   font-size: 14px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -318,6 +317,77 @@ body {
 
 .rank .hero-button:hover {
   background: #ffffff;
+  color: #5d3df3;
+  /* transform: translateY(-3px);
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.6)); */
+}
+
+.rank-green {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.rank-green-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: auto;     
+  object-fit: contain;
+  object-position: left center;
+  z-index: 0;
+}
+
+.rank-green-content {
+  position: relative;
+  z-index: 2;
+  margin-left: 50%;    
+  max-width: 480px;    
+  padding: 60px 60px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rank-green-title {
+  font-size: clamp(28px, 3vw, 48px);
+  font-weight: 800;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #0a0a0a;
+  margin-bottom: 24px;
+}
+
+.rank-green-text {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+.rank-green-btn {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 15px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
+}
+
+.rank-green-btn:hover {
+  background: #0a0a0a;
   color: #5d3df3;
 }
 
