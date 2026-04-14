@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -253,50 +257,69 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px 120px;
-  overflow: hidden;
-  min-height: 300px;
+  margin: 100px 40px; 
+  padding: 60px 80px;
+  border-radius: 0;
+  overflow: visible; 
+  min-height: 450px;
 }
 
 .rank-content {
-  position: relative;
+  flex: 1;
+  max-width: 50%;
   z-index: 2;
-  max-width: 500px;
 }
 
 .rank-label {
-  color: rgba(255,255,255,0.7);
-  font-size: 12px;
-  font-weight: 600;
-  font-family: 'Rajdhani', sans-serif;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-bottom: 24px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  opacity: 0.9;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .rank-title {
-  font-size: clamp(32px, 4vw, 56px);
-  font-weight: 900;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
   text-transform: uppercase;
-  color: white;
-  line-height: 1.05;
-  margin-bottom: 22px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  max-width: 500px;
 }
 
 .rank-image {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  object-fit: contain;
-  object-position: right bottom;
+  right: -122px; 
+  bottom: -60px;
+  height: 136%; 
+  width: auto;
   z-index: 1;
+  object-fit: contain;
+  pointer-events: none;
 }
 
+.rank .hero-button {
+  display: inline-block;
+  padding: 15px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 
+.rank .hero-button:hover {
+  background: #ffffff;
+  color: #5d3df3;
+}
 
 /* Tablet */
 @media (max-width: 768px) {
