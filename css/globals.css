@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;800;900&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+:root {
+  --section-padding-x: 120px;
+  --section-padding-y: 80px;
+  --section-gap: 0px;
+  --color-purple: #5339F8;
+  --color-green: #2CFF28;
+  --color-dark: #0d0f1a;
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Rajdhani', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +24,11 @@ html {
 body {
   background-color: #0d0d1a;
   color: #ffffff;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: var(--font-body);
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: var(--font-display);
 }
 
 a {

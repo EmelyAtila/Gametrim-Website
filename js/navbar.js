@@ -1,18 +1,18 @@
-// const hamburger = document.querySelector('.hamburger');
-// const drawer = document.querySelector('.drawer');
+const hamburger = document.querySelector('.hamburger');
+const drawer = document.querySelector('.drawer');
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('open');
-//   drawer.classList.toggle('open');
-// });
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  drawer.classList.toggle('open');
+});
 
-// // Fechar ao clicar nos links do drawer
-// document.querySelectorAll('.drawer-link').forEach(link => {
-//   link.addEventListener('click', () => {
-//     hamburger.classList.remove('open');
-//     drawer.classList.remove('open');
-//   });
-// });
+// Fechar ao clicar nos links do drawer
+document.querySelectorAll('.drawer-link').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('open');
+    drawer.classList.remove('open');
+  });
+});
 
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
