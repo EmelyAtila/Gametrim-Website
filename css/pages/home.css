@@ -348,9 +348,9 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-right: 120px;
-  min-height: 540px;
+  min-height: 520px;
   background: transparent;
-  padding: 80px 100px;
+  padding: 60px 80px;
   overflow: visible;
 }
 
