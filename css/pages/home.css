@@ -461,10 +461,134 @@ body {
 }
 
 .rank-green .hero-button-wrapper:active {
-   transform: translateY(1px);
+  transform: translateY(1px);
   filter: drop-shadow(0 0 20px rgba(83, 57, 248, 0.9));
 }
 
+/* footer */
+
+.footer {
+  padding: var(--section-padding-y) var(--section-padding-x);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 40px;
+}
+
+.footer-brand {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.footer-logo img {
+  height: 32px;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(58%) sepia(97%) saturate(400%) hue-rotate(80deg);
+}
+
+.footer-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.6;
+  max-width: 240px;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 1px solid var(--color-green);
+  color: var(--color-green);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: flex-start;
+  transition: background 0.2s, color 0.2s;
+  clip-path: polygon(8px 0%, 100% 0%, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0% 100%, 0% 8px);
+}
+
+.footer-btn:hover {
+  background: var(--color-green);
+  color: #0a0a0a;
+}
+
+.footer-apps {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  margin-left: auto;
+}
+
+.footer-apps-title {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.footer-apps a img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-copy {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+}
+
+.footer-socials a:hover {
+  opacity: 1;
+}
+
+.footer-socials img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1);
+  opacity: 0.6;
+}
+
+.footer-socials a:hover img {
+  opacity: 1;
+}
 
 
 
