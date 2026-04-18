@@ -333,7 +333,17 @@ body {
   color: white;
   font-size: 14px;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
+}
+
+.rank .hero-button-wrapper:active {
+  transform: translateY(1px);
+  filter: none;
+}
+
+.rank .hero-button-wrapper:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 6px 16px rgba(255, 255, 255, 0.3));
 }
 
 .rank .hero-button:hover {
@@ -436,15 +446,22 @@ body {
   font-weight: 800;
   letter-spacing: 0.15em;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
   clip-path: polygon(12px 0%, 100% 0%, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0% 100%, 0% 12px);
 }
 
 .rank-green-btn:hover {
   background: #111;
   color: var(--color-purple);
-  transform: translateY(-3px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.rank-green .hero-button-wrapper:hover {
+  filter: drop-shadow(0 6px 16px rgba(0, 255, 170, 0.3));
+}
+
+.rank-green .hero-button-wrapper:active {
+  filter: drop-shadow(0 0 20px rgba(0, 255, 170, 0.6));
 }
 
 /* =====================
