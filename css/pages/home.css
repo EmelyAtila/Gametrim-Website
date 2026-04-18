@@ -457,12 +457,16 @@ body {
 }
 
 .rank-green .hero-button-wrapper:hover {
-  filter: drop-shadow(0 6px 16px rgba(0, 255, 170, 0.3));
+  filter: drop-shadow(0 6px 16px rgba(83, 57, 248, 0.6));
 }
 
 .rank-green .hero-button-wrapper:active {
-  filter: drop-shadow(0 0 20px rgba(0, 255, 170, 0.6));
+   transform: translateY(1px);
+  filter: drop-shadow(0 0 20px rgba(83, 57, 248, 0.9));
 }
+
+
+
 
 /* =====================
    TABLET
