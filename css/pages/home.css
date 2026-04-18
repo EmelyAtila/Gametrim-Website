@@ -261,8 +261,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 120px;
-  padding: 60px 80px;
+  margin-left: 0;
+  padding: 60px 80px 60px 200px;
   min-height: 520px;
   overflow: hidden;
   background: transparent;
@@ -271,7 +271,10 @@ body {
 .rank::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  right: 0;
   background: #5B3CF5;
   z-index: 0;
   clip-path: polygon(80px 0%,
@@ -357,17 +360,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right: 120px;
+  margin-right: 0;
   min-height: 520px;
   background: transparent;
-  padding: 60px 80px;
-  overflow: visible;
+  padding: 60px 200px 60px 80px;
+  overflow: hidden;
 }
 
 .rank-green::after {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: -5px;
+  left: 60px;
+  right: 120px;
   background: var(--color-green);
   z-index: 0;
   clip-path: polygon(0% 0%,
@@ -397,7 +403,7 @@ body {
 .rank-green-image {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
   height: 100%;
   width: auto;
   object-fit: contain;
@@ -468,7 +474,9 @@ body {
 /* footer */
 
 .footer {
-  padding: var(--section-padding-y) var(--section-padding-x);
+  padding: 60px 200px;
+  max-width: 1440px;
+  margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
