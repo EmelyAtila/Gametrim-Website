@@ -474,7 +474,7 @@ body {
 /* footer */
 
 .footer {
-  padding: 60px 200px;
+  padding: 60px 80px;
   max-width: 1440px;
   margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -484,6 +484,7 @@ body {
   display: flex;
   gap: 64px;
   margin-bottom: 40px;
+  padding: 40px;
 }
 
 .footer-brand {
@@ -709,12 +710,166 @@ body {
    MOBILE
    ===================== */
 @media (max-width: 480px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 16px 16px;
+    margin-top: 0;
+    justify-content: flex-end;
+  }
+
   .hero-title {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .hero-button {
     padding: 14px 28px;
     font-size: 13px;
+  }
+
+  .game-logos {
+    gap: 16px;
+    padding: 0 16px 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    bottom: 0;
+  }
+
+  .game-logos img {
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  /* Tournaments Headings */
+  .tournaments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+
+  .tournaments-title {
+    font-size: 24px;
+  }
+
+  /* Tournaments Cards horizontally scrolled */
+  .tournaments-cards {
+    gap: 16px;
+    padding: 16px 0 16px 20px;
+  }
+
+  .tournaments-bg-text {
+    left: 2px;
+    height: 12%;
+  }
+
+  .card {
+    flex: 0 0 60vw;
+    max-width: 60vw;
+  }
+
+  /* Purple Rank adjustments */
+  .rank {
+    background-image: url('../assets/images/hero-bg-per-mobile.webp');
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+  }
+
+  .rank-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  .rank-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 24px;
+  }
+
+  .rank-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .rank::after {
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0;
+    display: none !important;
+
+  }
+
+  /* Green Rank (Groups) adjustments */
+  .rank-green {
+    background-image: url('/assets/images/fortnite-mobile.webp');
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+  }
+
+  .rank-green::after {
+    display: none !important;
+  }
+
+  .rank-green-image {
+    display: none;
+  }
+
+  .rank-green-content {
+    text-align: center;
+    align-items: center;
+  }
+
+  .rank-green-text {
+    text-align: center;
+    margin: 0 0 24px 0;
+  }
+
+  .rank-green-btn {
+    align-self: center;
+  }
+
+  /* Footer layout */
+  .footer {
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    padding: 0;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-apps {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-btn {
+    align-self: center;
   }
 }
