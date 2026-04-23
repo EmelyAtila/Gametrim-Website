@@ -47,3 +47,8 @@ button:hover {
 button:active {
   transform: translateY(1px);
 }
+
+button:focus, a:focus {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
