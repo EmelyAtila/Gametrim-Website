@@ -5,7 +5,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="Site Gametrim, torneios de games, torneios de esports, torneios de jogos, torneios de videogames, torneios online, torneios presencia" />
+    content="Gametrim - Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais. Mostre seu talento!" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gametrim — Torneios de Games" />
+  <meta property="og:description" content="Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais." />
+  <meta property="og:image" content="assets/images/hero-bg.webp" />
+  <meta property="og:url" content="https://gametrim.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gametrim — Torneios de Games" />
+  <meta name="twitter:description" content="Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais." />
+  <meta name="twitter:image" content="assets/images/hero-bg.webp" />
+
   <title>Gametrim — Torneios de Games</title>
   <link rel="stylesheet" href="css/globals.css" />
   <link rel="stylesheet" href="css/navbar.css" />
@@ -44,9 +58,10 @@
       <button class="btn-login">Fazer Login</button>
       <button class="btn-cadastrar">Cadastrar-se</button>
     </div>
-  </div>
+   </div>
 
-  <section class="hero">
+   <main>
+   <section class="hero">
     <picture>
       <source media="(max-width: 768px)" srcset="assets/images/hero-bg-mobile.webp" />
       <img src="assets/images/hero-bg.webp" alt="Hero background" class="hero-bg" />
@@ -89,7 +104,7 @@
 
     <div class="tournaments-cards">
       <div class="card">
-        <img src="assets/images/card-cs.webp" alt="Counter-Strike" />
+        <img src="assets/images/card-cs.webp" alt="Counter-Strike" loading="lazy" />
         <div class="card-info">
           <h3>Counter-Strike: Global...</h3>
           <span class="card-tag">
@@ -99,7 +114,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-valorant.webp" alt="Valorant" />
+        <img src="assets/images/card-valorant.webp" alt="Valorant" loading="lazy" />
         <div class="card-info">
           <h3>Valorant</h3>
           <span class="card-tag">
@@ -109,7 +124,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-lol.webp" alt="League of Legends" />
+        <img src="assets/images/card-lol.webp" alt="League of Legends" loading="lazy" />
         <div class="card-info">
           <h3>League of Legends</h3>
           <span class="card-tag">
@@ -119,7 +134,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-rocket-league.webp" alt="Rocket League" />
+        <img src="assets/images/card-rocket-league.webp" alt="Rocket League" loading="lazy" />
         <div class="card-info">
           <h3>Rocket League</h3>
           <span class="card-tag">
@@ -156,7 +171,7 @@
 
     <div class="tournaments-cards">
       <div class="card">
-        <img src="assets/images/card-valorant2.webp" alt="Valorant" />
+        <img src="assets/images/card-valorant2.webp" alt="Valorant" loading="lazy" />
         <div class="card-info">
           <h3>Valorant - 1V1</h3>
           <span class="card-tag">
@@ -166,7 +181,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-lol2.webp" alt="League of Legends" />
+        <img src="assets/images/card-lol2.webp" alt="League of Legends" loading="lazy" />
         <div class="card-info">
           <h3>League of Legends - 5V5</h3>
           <span class="card-tag">
@@ -176,7 +191,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-rocket-league2.webp" alt="Rocket League" />
+        <img src="assets/images/card-rocket-league2.webp" alt="Rocket League" loading="lazy" />
         <div class="card-info">
           <h3>Rocket League - 1V1</h3>
           <span class="card-tag">
@@ -186,7 +201,7 @@
       </div>
 
       <div class="card">
-        <img src="assets/images/card-cs2.webp" alt="Counter-Strike" />
+        <img src="assets/images/card-cs2.webp" alt="Counter-Strike" loading="lazy" />
         <div class="card-info">
           <h3>Counter-Strike - 5V5</h3>
           <span class="card-tag">
@@ -209,10 +224,11 @@
       <div class="hero-button-wrapper">
         <a href="#" class="rank-green-btn">Visualizar o rank</a>
       </div>
-    </div>
-  </section>
+   </div>
+   </section>
+   </main>
 
-  <footer class="footer">
+   <footer class="footer">
     <div class="footer-top">
       <div class="footer-brand">
         <a href="#" class="footer-logo">
@@ -246,11 +262,10 @@
 
   <script src="js/navbar.js"></script>
   <script>
-    // Evita que a página role para o topo e mostra um aviso para quem visita o portfólio
+    // Evita ações em links demo
     document.querySelectorAll('a[href="#"]').forEach(link => {
       link.addEventListener('click', function(e) {
-        e.preventDefault(); 
-        alert('Funcionalidade apenas demonstrativa (Projeto de Portfólio).');
+        e.preventDefault();
       });
     });
   </script>
