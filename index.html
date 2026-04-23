@@ -1,267 +1,274 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Site Gametrim, torneios de games, torneios de esports, torneios de jogos, torneios de videogames, torneios online, torneios presencia"
-    />
-    <title>Gametrim — Torneios de Games</title>
-    <link rel="stylesheet" href="css/globals.css" />
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/pages/home.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">
-        <img src="assets/icons/GametrimLogo.svg" alt="Gametrim" />
-      </a>
 
-      <ul class="navbar-links">
-        <li><a href="#jogos">Jogos</a></li>
-        <li><a href="#mercado">Mercado</a></li>
-        <li><a href="#jogadores">Jogadores</a></li>
-      </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Gametrim - Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais. Mostre seu talento!" />
 
-      <div class="navbar-buttons">
-        <button class="btn-login">Fazer Login</button>
-        <button class="btn-cadastrar">Cadastrar-se</button>
-      </div>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gametrim — Torneios de Games" />
+  <meta property="og:description" content="Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais." />
+  <meta property="og:image" content="assets/images/hero-bg.webp" />
+  <meta property="og:url" content="https://gametrim.com" />
+  <meta property="og:type" content="website" />
 
-      <button class="hamburger" aria-label="Abrir menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Gametrim — Torneios de Games" />
+  <meta name="twitter:description" content="Plataforma de torneios de jogos e esports. Participe de torneios online e presenciais de Valorant, CS, LOL e mais." />
+  <meta name="twitter:image" content="assets/images/hero-bg.webp" />
 
-    <div class="drawer">
-      <a href="#jogos" class="drawer-link">Jogos</a>
-      <a href="#mercado" class="drawer-link">Mercado</a>
-      <a href="#jogadores" class="drawer-link">Jogadores</a>
-      <div class="drawer-buttons">
-        <button class="btn-login">Fazer Login</button>
-        <button class="btn-cadastrar">Cadastrar-se</button>
+  <title>Gametrim — Torneios de Games</title>
+  <link rel="stylesheet" href="css/globals.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">
+      <img src="assets/icons/GametrimLogo.svg" alt="Gametrim" />
+    </a>
+
+    <ul class="navbar-links">
+      <li><a href="#jogos">Jogos</a></li>
+      <li><a href="#mercado">Mercado</a></li>
+      <li><a href="#jogadores">Jogadores</a></li>
+    </ul>
+
+    <div class="navbar-buttons">
+      <button class="btn-login">Fazer Login</button>
+      <button class="btn-cadastrar">Cadastrar-se</button>
+    </div>
+
+    <button class="hamburger" aria-label="Abrir menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <div class="drawer">
+    <a href="#jogos" class="drawer-link">Jogos</a>
+    <a href="#mercado" class="drawer-link">Mercado</a>
+    <a href="#jogadores" class="drawer-link">Jogadores</a>
+    <div class="drawer-buttons">
+      <button class="btn-login">Fazer Login</button>
+      <button class="btn-cadastrar">Cadastrar-se</button>
+    </div>
+   </div>
+
+   <main>
+   <section class="hero">
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/images/hero-bg-mobile.webp" />
+      <img src="assets/images/hero-bg.webp" alt="Hero background" class="hero-bg" />
+    </picture>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">Mostre seu talento e consiga visibilidade.</h1>
+      <p class="hero-text">
+        Comece sua equipe ou entre em uma para participar e apareça para o
+        mundo ver seu potencial.
+      </p>
+      <div class="hero-button-wrapper">
+        <a href="pages/torneios.html" class="hero-button">Veja os torneios</a>
       </div>
     </div>
 
-    <section class="hero">
-      <picture>
-        <source
-          media="(max-width: 768px)"
-          srcset="assets/images/hero-bg-mobile.webp"
-        />
-        <img
-          src="assets/images/hero-bg.webp"
-          alt="Hero background"
-          class="hero-bg"
-        />
-      </picture>
+    <div class="game-logos">
+      <img src="assets/icons/valorant-logo.svg" alt="Valorant" />
+      <img src="assets/icons/cs-logo.svg" alt="Counter-Strike" />
+      <img src="assets/icons/lol-logo.svg" alt="League of Legends" />
+      <img src="assets/icons/dota-logo.svg" alt="Dota 2" />
+      <img src="assets/icons/rocket-league-logo.svg" alt="Rocket League" />
+      <img src="assets/icons/rainbowsix-logo.svg" alt="Rainbow Six" />
+      <img src="assets/icons/fortinite-logo.svg" alt="Fortnite" />
+      <img src="assets/icons/pubg-logo.svg" alt="PUBG" />
+    </div>
+  </section>
 
-      <div class="overlay"></div>
+  <section class="tournaments">
+    <img src="assets/icons/Torneios.svg" alt="" class="tournaments-bg-text" />
 
-      <div class="hero-content">
-        <h1 class="hero-title">Mostre seu talento e consiga visibilidade.</h1>
-        <p class="hero-text">
-          Comece sua equipe ou entre em uma para participar e apareça para o
-          mundo ver seu potencial.
-        </p>
-        <div class="hero-button-wrapper">
-          <a href="pages/torneios.html" class="hero-button">Veja os torneios</a>
+    <div class="tournaments-header">
+      <h2 class="tournaments-title">Melhores Torneios</h2>
+      <a href="pages/torneios.html" class="tournaments-link">
+        Ver todos os jogos →
+      </a>
+    </div>
+
+    <div class="tournaments-cards">
+      <div class="card">
+        <img src="assets/images/card-cs.webp" alt="Counter-Strike" loading="lazy" />
+        <div class="card-info">
+          <h3>Counter-Strike: Global...</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
         </div>
       </div>
 
-      <div class="game-logos">
-        <img src="assets/icons/valorant-logo.svg" alt="Valorant" />
-        <img src="assets/icons/cs-logo.svg" alt="Counter-Strike" />
-        <img src="assets/icons/lol-logo.svg" alt="League of Legends" />
-        <img src="assets/icons/dota-logo.svg" alt="Dota 2" />
-        <img src="assets/icons/rocket-league-logo.svg" alt="Rocket League" />
-        <img src="assets/icons/rainbowsix-logo.svg" alt="Rainbow Six" />
-        <img src="assets/icons/fortinite-logo.svg" alt="Fortnite" />
-        <img src="assets/icons/pubg-logo.svg" alt="PUBG" />
-      </div>
-    </section>
-
-    <section class="tournaments">
-      <img src="assets/icons/Torneios.svg" alt="" class="tournaments-bg-text" />
-
-      <div class="tournaments-header">
-        <h2 class="tournaments-title">Melhores Torneios</h2>
-        <a href="pages/torneios.html" class="tournaments-link">
-          Ver todos os jogos →
-        </a>
-      </div>
-
-      <div class="tournaments-cards">
-        <div class="card">
-          <img src="assets/images/card-cs.webp" alt="Counter-Strike" />
-          <div class="card-info">
-            <h3>Counter-Strike: Global...</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/images/card-valorant.webp" alt="Valorant" />
-          <div class="card-info">
-            <h3>Valorant</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/images/card-lol.webp" alt="League of Legends" />
-          <div class="card-info">
-            <h3>League of Legends</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="assets/images/card-rocket-league.webp"
-            alt="Rocket League"
-          />
-          <div class="card-info">
-            <h3>Rocket League</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
+      <div class="card">
+        <img src="assets/images/card-valorant.webp" alt="Valorant" loading="lazy" />
+        <div class="card-info">
+          <h3>Valorant</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
         </div>
       </div>
-    </section>
 
-    <section class="rank section-divider">
-      <div class="rank-content">
-        <p class="rank-label">— MOSTRE AO MUNDO ✕</p>
-        <h2 class="rank-title">Suba sua classificação para o topo do rank</h2>
-        <div class="hero-button-wrapper">
-          <a href="#" class="hero-button">Visualizar o rank</a>
+      <div class="card">
+        <img src="assets/images/card-lol.webp" alt="League of Legends" loading="lazy" />
+        <div class="card-info">
+          <h3>League of Legends</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
         </div>
       </div>
+
+      <div class="card">
+        <img src="assets/images/card-rocket-league.webp" alt="Rocket League" loading="lazy" />
+        <div class="card-info">
+          <h3>Rocket League</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rank section-divider">
+    <div class="rank-content">
+      <p class="rank-label">— MOSTRE AO MUNDO ✕</p>
+      <h2 class="rank-title">Suba sua classificação para o topo do rank</h2>
+      <div class="hero-button-wrapper">
+        <a href="#" class="hero-button">Visualizar o rank</a>
+      </div>
+    </div>
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/images/hero-bg-per-mobile.webp" />
       <img src="assets/images/per.svg" alt="Jogadores" class="rank-image" />
-    </section>
+    </picture>
+  </section>
 
-    <section class="tournaments">
-      <img src="assets/icons/ao-vivo.svg" alt="" class="tournaments-bg-text" />
+  <section class="tournaments">
+    <img src="assets/icons/ao-vivo.svg" alt="" class="tournaments-bg-text" />
 
-      <div class="tournaments-header">
-        <h2 class="tournaments-title">Torneios ao Vivo</h2>
-        <a href="pages/torneios.html" class="tournaments-link">
-          Ver todos os torneios →
+    <div class="tournaments-header">
+      <h2 class="tournaments-title">Torneios ao Vivo</h2>
+      <a href="pages/torneios.html" class="tournaments-link">
+        Ver todos os torneios →
+      </a>
+    </div>
+
+    <div class="tournaments-cards">
+      <div class="card">
+        <img src="assets/images/card-valorant2.webp" alt="Valorant" loading="lazy" />
+        <div class="card-info">
+          <h3>Valorant - 1V1</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/card-lol2.webp" alt="League of Legends" loading="lazy" />
+        <div class="card-info">
+          <h3>League of Legends - 5V5</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/card-rocket-league2.webp" alt="Rocket League" loading="lazy" />
+        <div class="card-info">
+          <h3>Rocket League - 1V1</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/card-cs2.webp" alt="Counter-Strike" loading="lazy" />
+        <div class="card-info">
+          <h3>Counter-Strike - 5V5</h3>
+          <span class="card-tag">
+            <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="rank-green">
+    <div class="rank-bg-text">GRUPOS</div>
+    <img src="assets/images/fortnite.webp" alt="Grupo de jogadores" class="rank-green-image" />
+    <div class="rank-green-content">
+      <h2 class="rank-green-title">Junte seus amigos ou entre em um grupo</h2>
+      <p class="rank-green-text">
+        Mais do que armas e munição, VALORANT inclui agentes com habilidades
+        adaptativas, rápidas e letais, que criam oportunidades.
+      </p>
+      <div class="hero-button-wrapper">
+        <a href="#" class="rank-green-btn">Visualizar o rank</a>
+      </div>
+   </div>
+   </section>
+   </main>
+
+   <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <img src="assets/icons/GametrimLogo.svg" alt="Gametrim" />
         </a>
-      </div>
-
-      <div class="tournaments-cards">
-        <div class="card">
-          <img src="assets/images/card-valorant2.webp" alt="Valorant" />
-          <div class="card-info">
-            <h3>Valorant - 1V1</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/images/card-lol2.webp" alt="League of Legends" />
-          <div class="card-info">
-            <h3>League of Legends - 5V5</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img
-            src="assets/images/card-rocket-league2.webp"
-            alt="Rocket League"
-          />
-          <div class="card-info">
-            <h3>Rocket League - 1V1</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/images/card-cs2.webp" alt="Counter-Strike" />
-          <div class="card-info">
-            <h3>Counter-Strike - 5V5</h3>
-            <span class="card-tag">
-              <img src="assets/icons/card-subtitulo.svg" alt="" /> 10 Torneios
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="rank-green">
-      <div class="rank-bg-text">GRUPOS</div>
-      <img
-        src="assets/images/fortnite.webp"
-        alt="Grupo de jogadores"
-        class="rank-green-image"
-      />
-      <div class="rank-green-content">
-        <h2 class="rank-green-title">Junte seus amigos ou entre em um grupo</h2>
-        <p class="rank-green-text">
-          Mais do que armas e munição, VALORANT inclui agentes com habilidades
-          adaptativas, rápidas e letais, que criam oportunidades.
+        <p class="footer-desc">
+          Design amazing digital experiences that create more happy in the
+          world
         </p>
-        <div class="hero-button-wrapper">
-          <a href="#" class="rank-green-btn">Visualizar o rank</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <a href="#" class="footer-logo">
-            <img src="assets/icons/GametrimLogo.svg" alt="Gametrim" />
-          </a>
-          <p class="footer-desc">
-            Design amazing digital experiences that create more happy in the
-            world
-          </p>
-          <a href="pages/torneios.html" class="footer-btn">Ver os jogos</a>
-        </div>
-
-        <div class="footer-apps">
-          <h4 class="footer-apps-title">Baixe nosso aplicativo</h4>
-          <a href="#"
-            ><img src="assets/icons/apple-store.svg" alt="Apple Store"
-          /></a>
-          <a href="#"
-            ><img src="assets/icons/google-play.svg" alt="Google Play"
-          /></a>
-        </div>
+        <a href="pages/torneios.html" class="footer-btn">Ver os jogos</a>
       </div>
 
-      <div class="footer-bottom">
-        <p class="footer-copy">© 2023 Logo. All rights reserved.</p>
-        <div class="footer-socials">
-          <a href="#"><img src="assets/icons/dribbble.svg" alt="Dribbble" /></a>
-          <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
-          <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
-          <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
-          <a href="#"><img src="assets/icons/github.svg" alt="GitHub" /></a>
-        </div>
+      <div class="footer-apps">
+        <h4 class="footer-apps-title">Baixe nosso aplicativo</h4>
+        <a href="#"><img src="assets/icons/apple-store.svg" alt="Apple Store" /></a>
+        <a href="#"><img src="assets/icons/google-play.svg" alt="Google Play" /></a>
       </div>
-    </footer>
+    </div>
 
-    <script src="js/navbar.js"></script>
-  </body>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2023 Logo. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="#"><img src="assets/icons/dribbble.svg" alt="Dribbble" /></a>
+        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+        <a href="#"><img src="assets/icons/linkedin.svg" alt="LinkedIn" /></a>
+        <a href="#"><img src="assets/icons/facebook.svg" alt="Facebook" /></a>
+        <a href="#"><img src="assets/icons/github.svg" alt="GitHub" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script>
+    // Evita ações em links demo
+    document.querySelectorAll('a[href="#"]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+      });
+    });
+  </script>
+</body>
+
 </html>

@@ -182,3 +182,29 @@
     display: flex;
   }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .navbar {
+    padding: 0 24px;
+    gap: 16px;
+  }
+
+  .navbar-links {
+    gap: 16px;
+  }
+
+  .navbar-links a {
+    font-size: 13px;
+  }
+
+  .navbar-buttons {
+    gap: 8px;
+  }
+
+  .btn-login,
+  .btn-cadastrar {
+    font-size: 11px;
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+}

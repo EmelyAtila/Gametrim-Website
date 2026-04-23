@@ -100,10 +100,10 @@ body {
   right: 0;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 48px;
-  padding: 0 40px;
+  padding: 0px;
 }
 
 .game-logos img {
@@ -262,8 +262,13 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin-left: 0;
+<<<<<<< HEAD
   padding: 60px 80px 60px 200px;
   min-height: 520px;
+=======
+  padding: clamp(40px, 4vw, 60px) clamp(40px, 5.6vw, 80px) clamp(40px, 4vw, 60px) clamp(80px, 14vw, 200px);
+  min-height: clamp(420px, 36vw, 520px);
+>>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   overflow: hidden;
   background: transparent;
 }
@@ -273,7 +278,11 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
+<<<<<<< HEAD
   left: 120px;
+=======
+  left: clamp(60px, 8.3vw, 120px);
+>>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   right: 0;
   background: #5B3CF5;
   z-index: 0;
@@ -287,7 +296,7 @@ body {
 
 .rank-content {
   flex: 0 0 auto;
-  max-width: 500px;
+  max-width: clamp(280px, 35vw, 500px);
   z-index: 2;
   text-align: left;
   display: flex;
@@ -361,19 +370,32 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-right: 0;
+<<<<<<< HEAD
   min-height: 520px;
   background: transparent;
   padding: 60px 200px 60px 80px;
   overflow: visible;
+=======
+  min-height: clamp(420px, 36vw, 520px);
+  background: transparent;
+  padding: clamp(40px, 4vw, 60px) clamp(80px, 14vw, 200px) clamp(40px, 4vw, 60px) clamp(40px, 5.6vw, 80px);
+  overflow: hidden;
+>>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
 }
 
 .rank-green::after {
   content: '';
   position: absolute;
   top: 0;
+<<<<<<< HEAD
   bottom: 0;
   left: 0;
   right: 120px;
+=======
+  bottom: -5px;
+  left: clamp(30px, 4.2vw, 60px);
+  right: clamp(60px, 8.3vw, 120px);
+>>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   background: var(--color-green);
   z-index: 0;
   clip-path: polygon(0% 0%,
@@ -386,7 +408,7 @@ body {
 .rank-bg-text {
   position: absolute;
   top: 20%;
-  left: 580px;
+  left: clamp(200px, 40vw, 580px);
   transform: translateY(-50%);
   font-family: var(--font-display);
   font-size: clamp(80px, 10vw, 180px);
@@ -414,7 +436,11 @@ body {
 .rank-green-content {
   position: relative;
   z-index: 4;
+<<<<<<< HEAD
   max-width: 45%;
+=======
+  max-width: clamp(300px, 38vw, 550px);
+>>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -433,7 +459,7 @@ body {
 
 .rank-green-text {
   font-size: clamp(13px, 1vw, 14px);
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.6;
   margin-bottom: 22px;
   max-width: 420px;
@@ -474,7 +500,9 @@ body {
 /* footer */
 
 .footer {
-  padding: var(--section-padding-y) var(--section-padding-x);
+  padding: 60px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -482,6 +510,7 @@ body {
   display: flex;
   gap: 64px;
   margin-bottom: 40px;
+  padding: 40px;
 }
 
 .footer-brand {
@@ -598,121 +627,313 @@ body {
 
 
 
+@media (min-width: 700px) and (max-width: 1024px) {
+  .hero-bg {
+    object-position: center center;
+  }
+
+  /* Navbar */
+  .navbar-buttons .btn-cadastrar {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /* Hero */
+  .hero-content {
+    align-items: center;
+    text-align: center;
+    padding: 0 32px;
+  }
+
+  .hero-title {
+    font-size: clamp(28px, 4vw, 48px);
+  }
+
+  .game-logos {
+    gap: 24px;
+    padding: 0 24px 40px;
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .game-logos::-webkit-scrollbar {
+    display: none;
+  }
+
+  .game-logos img {
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  /* Cards */
+  .tournaments {
+    padding: 40px 24px;
+  }
+
+  .tournaments-header {
+    margin-bottom: 24px;
+  }
+
+  .tournaments-cards {
+    overflow-x: auto;
+    justify-content: space-between;
+    /* padding: 0 0 20px; */
+    gap: 16px;
+    scrollbar-width: none;
+  }
+
+  .tournaments-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    flex: 0 0 170px;
+    max-width: 170px;
+  }
+
+  .card > img {
+    height: 220px;
+  }
+
+  /* Rank */
+  .rank {
+    padding: 60px 40px;
+    min-height: 350px;
+  }
+
+  .rank::after {
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .rank-image {
+    height: 100%;
+    bottom: 0;
+  }
+
+  .rank-content {
+    max-width: 280px;
+  }
+
+  .rank-title {
+    font-size: 28px;
+  }
+
+  /* Rank green */
+  .rank-green {
+    padding: 60px 40px;
+    min-height: 350px;
+    justify-content: flex-end;
+  }
+
+  .rank-green::after {
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .rank-green-image {
+    height: 100%;
+    bottom: 0;
+  }
+
+  .rank-green-content {
+    max-width: 280px;
+    z-index: 4;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 32px;
+  }
+}
+
+
 /* =====================
-   TABLET
+   MOBILE
    ===================== */
-@media (max-width: 768px) {
-  :root {
-    --section-padding-x: 24px;
-    --section-padding-y: 48px;
+@media (max-width: 600px) {
+  .hero {
+    justify-content: center;
   }
 
   .hero-content {
     align-items: flex-start;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 16px 16px;
+    margin-top: 0;
+    justify-content: flex-end;
   }
 
   .hero-title {
     font-size: 32px;
-    max-width: 100%;
-  }
-
-  .hero-text {
-    font-size: 14px;
-    margin: 0 0 24px;
-  }
-
-  .game-logos {
-    gap: 24px;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding: 20px;
-    bottom: 20px;
-    scrollbar-width: none;
-    /* Esconde scrollbar no Firefox */
-  }
-
-  .game-logos::-webkit-scrollbar {
-    display: none;
-    /* Esconde scrollbar no Chrome/Safari */
-  }
-
-  .tournaments-cards {
-    justify-content: flex-start;
-    overflow-x: auto;
-    padding: 0 20px 20px;
-    gap: 16px;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .card {
-    flex: 0 0 240px;
-    max-width: 240px;
-  }
-
-  .rank {
-    flex-direction: column;
-    padding: 60px 24px;
-    text-align: center;
-    min-height: auto;
-  }
-
-  .rank-content {
-    max-width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .rank-image {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .rank-green {
-    flex-direction: column;
-    min-height: auto;
-    padding: 60px 24px;
-  }
-
-  .rank-green-image {
-    position: relative;
-    width: 100%;
-    height: auto;
-    object-position: center;
-    margin-bottom: 32px;
-  }
-
-  .rank-green-content {
-    margin-left: 0;
-    padding: 0;
-    text-align: center;
-    align-items: center;
-  }
-
-  .rank-green-text {
-    margin: 0 auto 32px;
-  }
-
-  .rank-green-btn {
-    align-self: center;
-  }
-}
-
-/* =====================
-   MOBILE
-   ===================== */
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 28px;
   }
 
   .hero-button {
     padding: 14px 28px;
     font-size: 13px;
+  }
+
+  .game-logos {
+    gap: 16px;
+    padding: 0 16px 20px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    bottom: 0;
+  }
+
+  .game-logos img {
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  /* Tournaments */
+  .tournaments {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+
+  .tournaments-header {
+    padding: 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 24px;
+    max-width: 100%;
+  }
+
+  .tournaments-title {
+    font-size: 24px;
+  }
+
+  .tournaments-cards {
+    gap: 12px;
+    padding: 12px 24px 16px 24px;
+    overflow-x: auto;
+    overflow-y: visible;
+    justify-content: flex-start;
+  }
+
+  .tournaments-bg-text {
+    left: 2px;
+    height: 12%;
+  }
+
+  .card {
+    flex: 0 0 55vw;
+    max-width: 55vw;
+  }
+
+  .card > img {
+    height: 280px;
+  }
+
+  /* Purple Rank */
+  .rank {
+    background-image: url('../assets/images/hero-bg-per-mobile.webp');
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 24px;
+  }
+
+  .rank-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+
+  .rank-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 24px;
+    max-width: 65%;
+  }
+
+  .rank-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .rank::after {
+    display: none !important;
+  }
+
+  /* Green Rank */
+  .rank-green {
+    background-image: url('/assets/images/fortnite-mobile.webp');
+    background-size: cover;
+    background-position: center top;
+    min-height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 24px 48px;
+  }
+
+  .rank-green::after {
+    display: none !important;
+  }
+
+  .rank-green-image {
+    display: none;
+  }
+
+  .rank-green-content {
+    text-align: center;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .rank-green-text {
+    text-align: center;
+    margin: 0 0 24px 0;
+  }
+
+  .rank-green-btn {
+    align-self: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 16px;
+    text-align: center;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    padding: 0;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer-brand {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-apps {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-btn {
+    align-self: center;
   }
 }
