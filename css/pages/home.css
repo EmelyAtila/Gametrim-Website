@@ -601,7 +601,7 @@ body {
 
 
 
-@media (min-width: 481px) and (max-width: 1024px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   .hero-bg {
     object-position: center center;
   }
@@ -730,7 +730,7 @@ body {
 /* =====================
    MOBILE
    ===================== */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .hero {
     justify-content: center;
   }
@@ -766,22 +766,31 @@ body {
     flex-shrink: 0;
   }
 
-  /* Tournaments Headings */
+  /* Tournaments */
+  .tournaments {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+
   .tournaments-header {
+    padding: 0 24px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    max-width: 100%;
   }
 
   .tournaments-title {
     font-size: 24px;
   }
 
-  /* Tournaments Cards horizontally scrolled */
   .tournaments-cards {
-    gap: 16px;
-    padding: 16px 0 16px 20px;
+    gap: 12px;
+    padding: 12px 24px 16px 24px;
+    overflow-x: auto;
+    overflow-y: visible;
+    justify-content: flex-start;
   }
 
   .tournaments-bg-text {
@@ -790,16 +799,23 @@ body {
   }
 
   .card {
-    flex: 0 0 60vw;
-    max-width: 60vw;
+    flex: 0 0 55vw;
+    max-width: 55vw;
   }
 
-  /* Purple Rank adjustments */
+  .card > img {
+    height: 280px;
+  }
+
+  /* Purple Rank */
   .rank {
     background-image: url('../assets/images/hero-bg-per-mobile.webp');
     background-size: cover;
     background-position: center bottom;
     min-height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px 24px;
   }
 
   .rank-image {
@@ -816,6 +832,7 @@ body {
     position: relative;
     z-index: 2;
     margin-top: 24px;
+    max-width: 65%;
   }
 
   .rank-title {
@@ -824,19 +841,18 @@ body {
   }
 
   .rank::after {
-    left: 0;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    z-index: 0;
     display: none !important;
-
   }
 
-  /* Green Rank (Groups) adjustments */
+  /* Green Rank */
   .rank-green {
     background-image: url('/assets/images/fortnite-mobile.webp');
     background-size: cover;
     background-position: center top;
     min-height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0 24px 48px;
   }
 
   .rank-green::after {
@@ -850,6 +866,7 @@ body {
   .rank-green-content {
     text-align: center;
     align-items: center;
+    margin-bottom: 48px;
   }
 
   .rank-green-text {
@@ -861,7 +878,7 @@ body {
     align-self: center;
   }
 
-  /* Footer layout */
+  /* Footer */
   .footer {
     padding: 40px 16px;
     text-align: center;
