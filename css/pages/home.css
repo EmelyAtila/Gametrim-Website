@@ -674,11 +674,17 @@ body {
   /* Rank */
   .rank {
     padding: 60px 40px;
-    min-height: 400px;
+    min-height: 350px;
+  }
+
+  .rank::after {
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 
   .rank-image {
-    height: 85%;
+    height: 100%;
+    bottom: 0;
   }
 
   .rank-content {
@@ -692,6 +698,26 @@ body {
   /* Rank green */
   .rank-green {
     padding: 60px 40px;
+    min-height: 350px;
+    justify-content: flex-end;
+  }
+
+  .rank-green::after {
+    left: 0;
+    right: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .rank-green-image {
+    height: 100%;
+    bottom: 0;
+  }
+
+  .rank-green-content {
+    max-width: 280px;
+    z-index: 4;
+    text-align: left;
+    align-items: flex-start;
   }
 
   /* Footer */
