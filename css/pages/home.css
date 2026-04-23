@@ -262,13 +262,8 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin-left: 0;
-<<<<<<< HEAD
-  padding: 60px 80px 60px 200px;
-  min-height: 520px;
-=======
   padding: clamp(40px, 4vw, 60px) clamp(40px, 5.6vw, 80px) clamp(40px, 4vw, 60px) clamp(80px, 14vw, 200px);
   min-height: clamp(420px, 36vw, 520px);
->>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   overflow: hidden;
   background: transparent;
 }
@@ -278,11 +273,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-<<<<<<< HEAD
-  left: 120px;
-=======
   left: clamp(60px, 8.3vw, 120px);
->>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   right: 0;
   background: #5B3CF5;
   z-index: 0;
@@ -370,32 +361,19 @@ body {
   align-items: center;
   justify-content: flex-end;
   margin-right: 0;
-<<<<<<< HEAD
-  min-height: 520px;
-  background: transparent;
-  padding: 60px 200px 60px 80px;
-  overflow: visible;
-=======
   min-height: clamp(420px, 36vw, 520px);
   background: transparent;
   padding: clamp(40px, 4vw, 60px) clamp(80px, 14vw, 200px) clamp(40px, 4vw, 60px) clamp(40px, 5.6vw, 80px);
   overflow: hidden;
->>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
 }
 
 .rank-green::after {
   content: '';
   position: absolute;
   top: 0;
-<<<<<<< HEAD
-  bottom: 0;
-  left: 0;
-  right: 120px;
-=======
   bottom: -5px;
   left: clamp(30px, 4.2vw, 60px);
   right: clamp(60px, 8.3vw, 120px);
->>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   background: var(--color-green);
   z-index: 0;
   clip-path: polygon(0% 0%,
@@ -436,11 +414,7 @@ body {
 .rank-green-content {
   position: relative;
   z-index: 4;
-<<<<<<< HEAD
-  max-width: 45%;
-=======
   max-width: clamp(300px, 38vw, 550px);
->>>>>>> 4473cc316fce933f08c4b69c46049e7be85fdfbf
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -835,7 +809,7 @@ body {
 
   /* Purple Rank */
   .rank {
-    background-image: url('../assets/images/hero-bg-per-mobile.webp');
+    background-image: url('../../assets/images/hero-bg-per-mobile.webp');
     background-size: cover;
     background-position: center bottom;
     min-height: 100vh;
@@ -872,7 +846,7 @@ body {
 
   /* Green Rank */
   .rank-green {
-    background-image: url('/assets/images/fortnite-mobile.webp');
+    background-image: url('../../assets/images/fortnite-mobile.webp');
     background-size: cover;
     background-position: center top;
     min-height: 100vh;
