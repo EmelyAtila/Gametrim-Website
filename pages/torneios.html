@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +8,38 @@
   <link rel="stylesheet" href="../css/navbar.css" />
   <link rel="stylesheet" href="../css/pages/torneios.css" />
 </head>
-<body>
-    
-</body>
 
-    <section class="page-hero">
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="navbar-logo">
+      <img src="../assets/icons/GametrimLogo.svg" alt="Gametrim" />
+    </a>
+    <ul class="navbar-links">
+      <li><a href="#jogos">Jogos</a></li>
+      <li><a href="#mercado">Mercado</a></li>
+      <li><a href="#jogadores">Jogadores</a></li>
+    </ul>
+    <div class="navbar-buttons">
+      <button class="btn-login">Fazer Login</button>
+      <button class="btn-cadastrar">Cadastrar-se</button>
+    </div>
+    <button class="hamburger" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="drawer">
+    <a href="#jogos" class="drawer-link">Jogos</a>
+    <a href="#mercado" class="drawer-link">Mercado</a>
+    <a href="#jogadores" class="drawer-link">Jogadores</a>
+    <div class="drawer-buttons">
+      <button class="btn-login">Fazer Login</button>
+      <button class="btn-cadastrar">Cadastrar-se</button>
+    </div>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
     <img src="../assets/images/card-valorant.webp" alt="Valorant" class="page-hero-bg" />
     <div class="page-hero-overlay"></div>
     <div class="page-hero-content">
@@ -25,6 +52,7 @@
     </div>
   </section>
 
+  <!-- GAME FILTER TABS -->
   <div class="game-filter">
     <button class="game-tab active">
       <img src="../assets/icons/valorant-logo.svg" alt="Valorant" /> Valorant
@@ -160,5 +188,16 @@
       </div>
     </div>
 
+  </main>
 
+  <script src="../js/navbar.js"></script>
+  <script>
+    document.querySelectorAll('.game-tab').forEach(tab => {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.game-tab').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
 </html>
