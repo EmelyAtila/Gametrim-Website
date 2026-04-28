@@ -1,0 +1,445 @@
+body {
+  overflow-x: hidden;
+}
+
+/* ── PAGE HERO ── */
+.page-hero {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+  min-height: 360px;
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  z-index: 0;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.9) 30%,
+    rgba(0, 0, 0, 0.4) 65%,
+    rgba(0, 0, 0, 0.1)
+  );
+  z-index: 1;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 clamp(24px, 5.6vw, 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.page-hero-tag {
+  font-size: clamp(10px, 0.75vw, 12px);
+  font-weight: 700;
+  font-family: var(--font-body);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 0;
+}
+
+.subtitle-valorant {
+  height: clamp(16px, 1.8vw, 26px);
+  width: auto;
+  margin: 0;
+}
+
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6.5vw, 88px);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  line-height: 0.95;
+  margin: 0;
+}
+
+.page-hero-text {
+  font-size: clamp(12px, 1vw, 14px);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-body);
+  max-width: clamp(280px, 28vw, 420px);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.page-hero-btn {
+  display: inline-block;
+  padding: clamp(12px, 1vw, 16px) clamp(24px, 2.8vw, 40px);
+  background: var(--color-purple);
+  color: white;
+  font-family: var(--font-body);
+  font-size: clamp(11px, 0.85vw, 14px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  clip-path: polygon(
+    12px 0%,
+    100% 0%,
+    100% calc(100% - 12px),
+    calc(100% - 12px) 100%,
+    0% 100%,
+    0% 12px
+  );
+  transition: filter 0.15s ease, transform 0.15s ease;
+  margin-top: 4px;
+}
+
+.page-hero-btn:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(0 6px 16px rgba(83, 57, 248, 0.6));
+}
+
+.page-hero-btn:active {
+  transform: translateY(1px);
+  filter: drop-shadow(0 0 20px rgba(83, 57, 248, 0.9));
+}
+
+/* ── GAME FILTER TABS ── */
+.game-filter {
+  display: flex;
+  align-items: center;
+  padding: 0 clamp(24px, 5.6vw, 80px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.game-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.game-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 24px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.45);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border: none;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  background: none;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.game-tab:hover {
+  color: white;
+}
+
+.game-tab.active {
+  color: white;
+  border-bottom-color: var(--color-green);
+}
+
+.game-tab img {
+  height: 18px;
+  width: auto;
+  opacity: 0.5;
+  filter: brightness(0) invert(1);
+}
+
+.game-tab.active img {
+  opacity: 1;
+}
+
+/* ── MAIN CONTENT ── */
+.tournaments-page {
+  padding: clamp(32px, 3.3vw, 48px) clamp(24px, 5.6vw, 80px);
+}
+
+/* ── SECTION HEADING ── */
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: clamp(18px, 2vw, 26px);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+.section-link {
+  color: var(--color-green);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.section-link:hover {
+  opacity: 0.7;
+}
+
+/* ── TOURNAMENT CARDS GRID 2 COL ── */
+.tournaments-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+/* ── TOURNAMENT CARD ── */
+.tournament-card {
+  cursor: pointer;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.3s ease, border-color 0.3s ease, filter 0.3s ease;
+}
+
+.tournament-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(83, 57, 248, 0.4);
+  filter: drop-shadow(0 12px 24px rgba(83, 57, 248, 0.25));
+}
+
+.tournament-card-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.tournament-card-thumb > img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.tournament-card:hover .tournament-card-thumb > img:first-child {
+  transform: scale(1.05);
+}
+
+.tournament-card-game-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tournament-card-game-badge img {
+  height: 14px;
+  filter: brightness(0) invert(1);
+}
+
+.live-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 10px;
+  background: #e53935;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.live-badge::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: white;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.game-logo-overlay {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.tournament-card-info {
+  padding: 16px 20px 20px;
+}
+
+.tournament-card-date {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-green);
+  margin-bottom: 6px;
+}
+
+.tournament-card-date.today {
+  color: #e53935;
+}
+
+.tournament-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font-body);
+  color: white;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.tournament-card-meta {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+/* ── GRID 3 COL ── */
+.tournaments-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.tournament-card-sm .tournament-card-info {
+  padding: 12px 16px 16px;
+}
+
+.tournament-card-sm .tournament-card-title {
+  font-size: 13px;
+}
+
+/* ── TABLET ── */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .page-hero {
+    height: 45vh;
+  }
+
+  .game-filter {
+    padding: 0 24px;
+  }
+
+  .tournaments-page {
+    padding: 40px 24px;
+  }
+
+  .tournaments-grid {
+    gap: 16px;
+  }
+
+  .tournaments-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .page-hero {
+    height: 50vh;
+    min-height: 300px;
+    align-items: flex-end;
+    padding-bottom: 5vh;
+  }
+
+  .page-hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.88)
+    );
+  }
+
+  .page-hero-content {
+    padding: 0 24px;
+    gap: 8px;
+  }
+
+  .page-hero-text {
+    max-width: 90vw;
+  }
+
+  .game-filter {
+    padding: 0 16px;
+  }
+
+  .game-tab {
+    padding: 14px 16px;
+    font-size: 12px;
+  }
+
+  .tournaments-page {
+    padding: 32px 16px;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .tournaments-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tournaments-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .tournaments-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
