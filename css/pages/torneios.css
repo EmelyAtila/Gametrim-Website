@@ -27,8 +27,8 @@ body {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.9) 30%,
-    rgba(0, 0, 0, 0.4) 65%,
+    rgba(0, 0, 0, 0.9) 5%,
+    rgba(0, 0, 0, 0.4) 30%,
     rgba(0, 0, 0, 0.1)
   );
   z-index: 1;
@@ -41,7 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
 }
 
 .page-hero-tag {
@@ -65,14 +65,14 @@ body {
   font-size: clamp(40px, 6.5vw, 88px);
   font-weight: 900;
   text-transform: uppercase;
-  color: white;
+  color: rgba(255, 255, 255, 0.884);
   line-height: 0.95;
   margin: 0;
 }
 
 .page-hero-text {
-  font-size: clamp(12px, 1vw, 14px);
-  color: rgba(255, 255, 255, 0.6);
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: rgba(255, 255, 255, 0.663);
   font-family: var(--font-body);
   max-width: clamp(280px, 28vw, 420px);
   line-height: 1.6;
@@ -80,26 +80,22 @@ body {
 }
 
 .page-hero-btn {
-  display: inline-block;
-  padding: clamp(12px, 1vw, 16px) clamp(24px, 2.8vw, 40px);
   background: var(--color-purple);
   color: white;
-  font-family: var(--font-body);
-  font-size: clamp(11px, 0.85vw, 14px);
+  padding: 16px 40px;
+  font-size: 14px;
   font-weight: 700;
+  font-family: var(--font-body);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   text-decoration: none;
-  clip-path: polygon(
-    12px 0%,
-    100% 0%,
-    100% calc(100% - 12px),
-    calc(100% - 12px) 100%,
-    0% 100%,
-    0% 12px
-  );
-  transition: filter 0.15s ease, transform 0.15s ease;
-  margin-top: 4px;
+  display: inline-block;
+  clip-path: polygon(12px 0%,
+      100% 0%,
+      100% calc(100% - 12px),
+      calc(100% - 12px) 100%,
+      0% 100%,
+      0% 12px);
 }
 
 .page-hero-btn:hover {
